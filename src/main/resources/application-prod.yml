@@ -1,0 +1,50 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: mysql@Root&ct7
+    url: jdbc:mysql://192.168.56.101/sell?characterEncoding=utf-8&useSSL=false
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.56.101
+    port: 6379
+server:
+  context-path: /sell
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  file: /workspace/log/sell.log
+#  level: debug
+
+
+wechat:
+  mpAppId: wx80dc15f590897b60
+  mpAppSecret: d71603a0c5b911feb67b0cd76cb8ba45
+
+  openAppId: wxd898fcb01713c658
+  openAppSecret: wxd898fcb01713c658
+  mchId: 1409146202
+  mchKey: c976503d34ca432c601361f969fd8d85
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://xuandev.s1.natapp.cc/sell/pay/notify
+  templateId:
+    orderStatus: 3YRLwuwGNGc15Stk_ycFYshgh9jA_dpc493TDPn4OH8
+
+
+projectUrl:
+  wechatMpAuthorize: http://xuandev.s1.natapp.cc
+  wechatOpenAuthorize: http://xuandev.s1.natapp.cc
+  sell: http://xuandev.s1.natapp.cc
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+#mybstis查看sql语句的配置
+#logging:
+#  level:
+#    com.imooc.dataobject.mapper: trace
+
+
+
+
