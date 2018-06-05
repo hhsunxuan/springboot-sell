@@ -13,7 +13,7 @@ public class WebSocketConfig {
 
     /**
      * 测试该句会出现异常ServerEndpointExporter causes refresh to fail with java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
-     * 请前去把cn.chenhaoxiang.config.WebSocketConfig中serverEndpointExporter方法上的Bean注解注释
+     * 请前去把com.imooc.config.serverEndpointExporter方法上的Bean注解注释
      * 问题解决: https://jira.spring.io/browse/SPR-12340
      *          https://jira.spring.io/browse/SPR-12109
      *

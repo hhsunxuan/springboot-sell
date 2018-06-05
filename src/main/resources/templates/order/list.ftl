@@ -125,11 +125,16 @@
 
 <script>
     var websocket = null;
+    //websocket客户端这里使用原生的HTML5来写
     if ('WebSocket' in window){
         websocket = new WebSocket('ws://xuandev.s1.natapp.cc/sell/webSocket');
     }else{
         alert('该浏览器不支持websocket!');
     }
+    /**
+     *
+     *以下为websocket客户端监听事件
+     */
     websocket.onopen = function (ev) {
         console.log('建立连接');
     }
